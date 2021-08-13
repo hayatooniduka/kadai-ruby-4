@@ -51,7 +51,7 @@
             <tr><th>氏名</th><td><%= name %></td></tr>
             <tr><th>メール</th><td><%= mail %></td></tr>
             <tr><th>電話番号</th><td><%= tel %></td></tr>
-            <tr><th>内容</th><td><%= content %></td></tr>
+            <tr><th>内容</th><td><%= content.gsub(/\r\n|\r|\n/, "<br>") %></td></tr>
         </table>
         
         <div class="text-center mb-4">
